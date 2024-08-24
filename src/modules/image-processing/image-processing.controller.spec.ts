@@ -9,7 +9,9 @@ describe('ImageProcessingController', () => {
       controllers: [ImageProcessingController],
     }).compile();
 
-    controller = module.get<ImageProcessingController>(ImageProcessingController);
+    controller = module.get<ImageProcessingController>(
+      ImageProcessingController,
+    );
   });
 
   it('should be defined', () => {
